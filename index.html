@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tic-Tac-Toe</title>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<header class="title">
+			<h1>T/T/T - Tic Tac Toe</h1>
+		</header>
+		<main class="container">
+			<div class="container-choice">
+				<div class="choice-text">
+					<p>Choose your symbol</p>
+				</div>
+				<div class="choice-symbol">
+					<div class="choice-symbol__container">
+						<div class="choice-symbol__container--symbol">
+							<p class="cross">X</p>
+						</div>
+						<div class="choice-symbol__container--symbol">
+							<p class="circle">O</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-game" style="display: none">
+				<div class="turn">
+					<p>
+						Turn:
+						<span class="turn__player">X</span>
+					</p>
+				</div>
+				<div class="game">
+					<div class="game__container">
+						<div class="game__container--row">
+							<div class="game__container--row__cell" data-cell></div>
+							<div class="game__container--row__cell" data-cell></div>
+							<div class="game__container--row__cell" data-cell></div>
+						</div>
+						<div class="game__container--row">
+							<div class="game__container--row__cell" data-cell></div>
+							<div class="game__container--row__cell" data-cell></div>
+							<div class="game__container--row__cell" data-cell></div>
+						</div>
+						<div class="game__container--row">
+							<div class="game__container--row__cell" data-cell></div>
+							<div class="game__container--row__cell" data-cell></div>
+							<div class="game__container--row__cell" data-cell></div>
+						</div>
+					</div>
+				</div>
+				<div class="results">
+					<div class="player">
+						<p class="player__name">Player X:</p>
+						<p class="player__score">0</p>
+					</div>
+					<div class="player">
+						<p class="player__name">Draw:</p>
+						<p class="player__score">0</p>
+					</div>
+					<div class="player">
+						<p class="player__name">Player O:</p>
+						<p class="player__score">0</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="reset" style="display: none">
+				<button class="reset__button">Reset</button>
+			</div>
+		</main>
+		<script src="script/script.js"></script>
+	</body>
+</html>
