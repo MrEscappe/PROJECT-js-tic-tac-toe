@@ -4,29 +4,34 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tic-Tac-Toe</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
 		<header class="title">
-			<h1>T/T/T - Tic Tac Toe</h1>
+			<h1>T/T/T</h1>
 		</header>
 		<main class="container">
 			<div class="container-choice">
-				<div class="choice-text">
-					<p>Choose your symbol</p>
+				<div class="choice-box">
+					<p class="choice-text">Choose your symbol</p>
 				</div>
-				<div class="choice-symbol">
+				<div class="choice-symbol-box">
 					<div class="choice-symbol__container">
 						<div class="choice-symbol__container--symbol">
 							<p class="cross">X</p>
 						</div>
+						<div class="separetor"></div>
 						<div class="choice-symbol__container--symbol">
 							<p class="circle">O</p>
 						</div>
 					</div>
 				</div>
+				<p>The player X starts first!</p>
 			</div>
-			<div class="container-game" style="display: none">
+			<div class="container-game">
 				<div class="turn">
 					<p>
 						Turn:
@@ -36,19 +41,19 @@
 				<div class="game">
 					<div class="game__container">
 						<div class="game__container--row">
-							<div class="game__container--row__cell" data-cell></div>
-							<div class="game__container--row__cell" data-cell></div>
-							<div class="game__container--row__cell" data-cell></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
 						</div>
 						<div class="game__container--row">
-							<div class="game__container--row__cell" data-cell></div>
-							<div class="game__container--row__cell" data-cell></div>
-							<div class="game__container--row__cell" data-cell></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
 						</div>
 						<div class="game__container--row">
-							<div class="game__container--row__cell" data-cell></div>
-							<div class="game__container--row__cell" data-cell></div>
-							<div class="game__container--row__cell" data-cell></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
+							<div class="game_cell"><div class="game_cell--symbol"></div></div>
 						</div>
 					</div>
 				</div>
@@ -66,10 +71,9 @@
 						<p class="player__score">0</p>
 					</div>
 				</div>
-			</div>
-
-			<div class="reset" style="display: none">
-				<button class="reset__button">Reset</button>
+				<div class="reset">
+					<button class="reset__button">Reset</button>
+				</div>
 			</div>
 		</main>
 		<script src="script/script.js"></script>
