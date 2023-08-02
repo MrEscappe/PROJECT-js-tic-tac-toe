@@ -176,11 +176,6 @@ body {
 
 /* Second page */
 
-.title {
-	/* Move title to the left */
-	/* justify-content: flex-start; */
-}
-
 .container-game {
 	display: flex;
 	align-items: center;
@@ -204,6 +199,28 @@ body {
 .turn p {
 	font-size: 2em;
 	font-weight: 900;
+}
+
+.container-play_again {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+	background-color: var(--clr-secondary);
+	border-radius: 10px;
+	padding: 15px 100px;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.play_again {
+	font-size: 1.5rem;
+	font-weight: 900;
+	margin: 0;
+	background: none;
+	border: 0;
+	color: var(--clr-yellow);
+	cursor: pointer;
 }
 
 .game__container {
@@ -275,4 +292,22 @@ body {
 
 .container-choice {
 	display: flex;
+}
+
+.container-play_again {
+	display: none;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+footer a {
+	color: var(--clr-priamry);
+	text-decoration: none;
+	font-weight: 900;
 }

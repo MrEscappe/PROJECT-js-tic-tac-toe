@@ -35,9 +35,13 @@
 				<div class="turn">
 					<p>
 						Turn:
-						<span class="turn__player">X</span>
+						<span id="turn-player" class="turn__player">X</span>
 					</p>
 				</div>
+				<div class="container-play_again">
+					<button class="play_again">Play again</button>
+				</div>
+
 				<div class="game">
 					<div class="game__container">
 						<div class="game__container--row">
@@ -60,21 +64,28 @@
 				<div class="results">
 					<div class="player">
 						<p class="player__name">Player X:</p>
-						<p class="player__score">0</p>
+						<p class="player__score playerX_score">0</p>
 					</div>
 					<div class="player">
 						<p class="player__name">Draw:</p>
-						<p class="player__score">0</p>
+						<p class="player__score draw_score">0</p>
 					</div>
 					<div class="player">
 						<p class="player__name">Player O:</p>
-						<p class="player__score">0</p>
+						<p class="player__score playerO_score">0</p>
 					</div>
 				</div>
 				<div class="reset">
 					<button class="reset__button">Reset</button>
 				</div>
 			</div>
+
+			<footer>
+				<p class="footer-text">
+					Made with ❤️ by
+					<a href="https://github.com/MrEscappe">José Sérgio</a>
+				</p>
+			</footer>
 		</main>
 		<script src="script/script.js"></script>
 	</body>
