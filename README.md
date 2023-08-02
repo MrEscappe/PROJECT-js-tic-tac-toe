@@ -16,7 +16,7 @@ The project if part of the curriculum of [The Odin Project](https://www.theodinp
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://mrescappe.github.io/PROJECT-js-tic-tac-toe/)
 
 ## Features
 
